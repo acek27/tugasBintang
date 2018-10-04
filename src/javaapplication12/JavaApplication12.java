@@ -1,10 +1,16 @@
 package javaapplication12;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class JavaApplication12 {
 
     public static void main(String[] args) {
         //   do while
-        System.out.println("Senin, 25 November 2013");
+        DateFormat dateFormat = new SimpleDateFormat("E, dd M Y");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date));
         System.out.println("#----------------#");
         int a = 5;
         do {
